@@ -1,0 +1,9 @@
+
+<h1>Update student Record</h1>
+<ul>
+    <%= form_with model: @students do |f| %>
+        <li><%= f.text_field :name, placeholder: "Your Name" %></li>
+        <li><%= f.text_field :age, placeholder: "Your Age" %></li>
+        <li><%= f.submit %></li><br>
+    <% end %>
+</ul>
